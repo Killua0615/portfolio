@@ -1,0 +1,678 @@
+* {
+	text-decoration: none;
+	list-style: none;
+}
+
+:root {
+	--primary-color: #faf7f2;
+	--secondary-color: #3a3028;
+	--tertiary-color: rgba(245, 240, 232, 0.95);
+	--natsumi-color: #c27830;
+	--engineering-color: #4a8b8c;
+	--marketing-color: #8b6aae;
+	--technology-color: #a0644a;
+}
+
+html {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 400;
+	background-color: var(--primary-color);
+	line-height: 25px;
+	color: var(--secondary-color);
+}
+
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 80px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+/* Content above watercolor canvas */
+#top-div, #core-content, .navbar, footer {
+	position: relative;
+	z-index: 2;
+}
+
+/* ============================================
+   WATERCOLOR CANVAS
+   ============================================ */
+
+/* Paper texture */
+body::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
+	pointer-events: none;
+	z-index: 99999;
+	opacity: 1;
+}
+
+/* Watercolor canvas is drawn by js/watercolor.js */
+
+/* ============================================
+   HOME PAGE
+   ============================================ */
+
+#home-title {
+	display: block;
+	text-align: center;
+	font-size: 6rem;
+	line-height: 1;
+}
+
+#top-div {
+	height: calc(100vh - 25vh);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	padding-left: 0;
+}
+
+#top-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* Colored keywords - Monet palette */
+.natsumi {
+	color: var(--natsumi-color);
+	display: inline-block;
+	transition: 0.3s;
+}
+
+.nav-list li .natsumi {
+	color: var(--natsumi-color);
+}
+
+.navbar-natsumi:hover {
+	color: var(--natsumi-color);
+}
+
+#natsumi-home-page:hover {
+	transform: scale(1.07) rotate(-3deg);
+}
+
+#natsumi-home-page, #engineering-link, #marketing-link {
+	text-decoration: underline;
+}
+
+#headline {
+	background: linear-gradient(135deg, rgba(180, 210, 230, 0.2), rgba(210, 170, 190, 0.15), rgba(170, 200, 160, 0.1));
+	display: inline-block;
+	text-align: center;
+	padding: 15px;
+	border-radius: 20px;
+	transition: 0.3s;
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+	line-height: 1.5;
+	border: 1px solid rgba(58, 48, 40, 0.06);
+}
+
+.engineering {
+	color: var(--engineering-color) !important;
+	transition: 0.3s;
+	display: inline-block;
+}
+
+.nav-list li .engineering {
+	color: var(--engineering-color);
+}
+
+.navbar-engineering:hover {
+	color: var(--engineering-color);
+}
+
+#engineering-link:hover {
+	transform: scale(1.07) rotate(-3deg);
+}
+
+.marketing {
+	color: var(--marketing-color) !important;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+.nav-list li .marketing {
+	color: var(--marketing-color);
+}
+
+.navbar-marketing:hover {
+	color: var(--marketing-color);
+}
+
+#marketing-link:hover {
+	transform: scale(1.07) rotate(-3deg);
+}
+
+.technology {
+	color: var(--technology-color);
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+
+.navbar {
+	background-color: var(--tertiary-color);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	color: #fff;
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgba(58, 48, 40, 0.06);
+}
+
+.nav-list {
+	padding: 0;
+	margin-left: 20%;
+}
+
+.nav-list li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	color: var(--secondary-color);
+	transition: 0.2s;
+}
+
+.navbar .burger-menu {
+	position: absolute;
+	width: 30px;
+	top: 0px;
+	right: 0px;
+	margin-right: 20px;
+	margin-top: 15px;
+	cursor: pointer;
+	display: none;
+	transition: 0.5s;
+	opacity: 0.7;
+}
+
+.burger-menu:hover {
+	rotate: 180deg;
+}
+
+/* ============================================
+   LINKS & GENERAL
+   ============================================ */
+
+footer {
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	animation: fadein 1s ease-in-out;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a:hover {
+	color: var(--natsumi-color);
+	text-decoration: underline;
+}
+
+.links {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.links ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+i, .icon {
+	margin-right: 10px;
+}
+
+/* ============================================
+   BIO TIMELINE
+   ============================================ */
+
+#bio {
+	padding-left: 0;
+	margin: 0;
+}
+
+#bio li {
+	margin-bottom: 16px;
+	display: flex;
+}
+
+.year {
+	margin-right: 16px;
+	font-weight: bold;
+	color: #8a7d6f;
+}
+
+/* ============================================
+   HEADINGS
+   ============================================ */
+
+h2 {
+	margin-top: 40px;
+	position: relative;
+	display: inline-block;
+}
+
+/* Watercolor underline on h2 */
+h2::after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: -4px;
+	right: -4px;
+	height: 8px;
+	border-radius: 4px;
+	opacity: 0.25;
+	z-index: -1;
+}
+
+h1 + h2::after,
+.personal-projects h2::after,
+div:nth-child(odd) > h2::after {
+	background: linear-gradient(90deg, rgba(74, 139, 140, 0.6), rgba(74, 139, 140, 0.1));
+}
+
+.school-projects h2::after,
+div:nth-child(even) > h2::after {
+	background: linear-gradient(90deg, rgba(139, 106, 174, 0.6), rgba(139, 106, 174, 0.1));
+}
+
+h2, h3, h4, h5, h6 {
+	scroll-margin-top: 60px;
+}
+
+h3 img {
+	margin-top: -5px;
+	margin-left: 8px;
+	vertical-align: middle;
+}
+
+hr {
+	margin: 50px;
+	border: none;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, rgba(58, 48, 40, 0.12), transparent);
+}
+
+/* ============================================
+   PROJECTS
+   ============================================ */
+
+.project-screenshot {
+	width: 100%;
+	height: auto;
+	border: 1px solid rgba(58, 48, 40, 0.12);
+	border-radius: 10px;
+}
+
+.project-div {
+	display: none;
+	animation: fadein 1s ease;
+}
+
+.project-name {
+	transition: 0.2s;
+}
+
+.project-name:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.project-tech-icon {
+	width: 25px;
+	height: 25px;
+	object-fit: contain;
+}
+
+.project-div a {
+	text-decoration: underline;
+}
+
+/* ============================================
+   TECH ICONS
+   ============================================ */
+
+.tech-icon {
+	width: 42px;
+	height: 42px;
+	object-fit: contain;
+	transition: transform 0.2s;
+}
+
+.tech-icon:hover {
+	transform: scale(1.15);
+}
+
+.tech-link:hover {
+	text-decoration: none;
+}
+
+/* ============================================
+   HERO (ABOUT PAGE)
+   ============================================ */
+
+#hero-section {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+
+#hero-text {
+	flex: 1;
+}
+
+#hero-name {
+	font-size: 4rem;
+	font-weight: bold;
+	color: var(--secondary-color);
+	margin: 0 0 15px -5px;
+	line-height: 1.1;
+}
+
+#hero-subtitle {
+	font-size: 1.4rem;
+	color: var(--natsumi-color);
+	margin: 0;
+	font-weight: 500;
+}
+
+#hero-image {
+	flex: 0 0 auto;
+}
+
+#hero-profile-pic {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center 35%;
+	scale: 1.15;
+	animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+	0%, 100% { transform: translateY(0px); }
+	50% { transform: translateY(-8px); }
+}
+
+/* ============================================
+   STATS
+   ============================================ */
+
+.stats-row {
+	display: flex;
+	gap: 40px;
+	margin: 16px 0;
+	padding: 16px 20px;
+	background: linear-gradient(135deg, rgba(194, 120, 48, 0.06), rgba(139, 106, 174, 0.06));
+	border-radius: 12px;
+	border: 1px solid rgba(58, 48, 40, 0.05);
+}
+
+.stat-block {
+	text-align: center;
+}
+
+.stat-value {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: var(--secondary-color);
+}
+
+.stat-label {
+	font-size: 0.8em;
+	color: #8a7d6f;
+}
+
+/* ============================================
+   PHOTO GRID
+   ============================================ */
+
+.photo-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+	margin: 16px 0;
+}
+
+.photo-grid img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 8px;
+	border: 1px solid rgba(58, 48, 40, 0.08);
+}
+
+.photo-placeholder {
+	width: 100%;
+	height: 180px;
+	background: linear-gradient(135deg, rgba(180, 210, 230, 0.15), rgba(210, 190, 140, 0.1));
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85em;
+	color: #b0a595;
+	border: 1px solid rgba(58, 48, 40, 0.06);
+}
+
+.photo-placeholder:nth-child(2) {
+	background: linear-gradient(135deg, rgba(210, 170, 190, 0.15), rgba(170, 200, 160, 0.1));
+}
+
+.photo-placeholder:nth-child(3) {
+	background: linear-gradient(135deg, rgba(170, 200, 160, 0.15), rgba(180, 210, 230, 0.1));
+}
+
+.photo-placeholder:nth-child(4) {
+	background: linear-gradient(135deg, rgba(210, 190, 140, 0.15), rgba(210, 170, 190, 0.1));
+}
+
+.photo-placeholder:nth-child(5) {
+	background: linear-gradient(135deg, rgba(180, 165, 210, 0.15), rgba(180, 210, 230, 0.1));
+}
+
+.photo-placeholder:nth-child(6) {
+	background: linear-gradient(135deg, rgba(194, 120, 48, 0.1), rgba(170, 200, 160, 0.1));
+}
+
+/* ============================================
+   EXPERIENCE
+   ============================================ */
+
+.experience-item {
+	margin-bottom: 24px;
+}
+
+.experience-item h4 {
+	margin: 0 0 4px 0;
+}
+
+.experience-item .period {
+	font-size: 0.85em;
+	color: #8a7d6f;
+	margin-bottom: 4px;
+}
+
+.experience-item .role {
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.experience-item ul {
+	padding-left: 20px;
+	margin-top: 4px;
+}
+
+.experience-item ul li {
+	list-style: disc;
+	margin-bottom: 4px;
+	font-size: 0.9em;
+	color: #6b5d4f;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fall {
+	from {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+#natsumi-home-page, #engineering-link, #marketing-link {
+	animation: fall 1.5s ease-in-out;
+}
+
+@keyframes fadein {
+	from { opacity: 0; transform: translateY(-20px); }
+	to   { opacity: 1; transform: translateY(0px); }
+}
+
+#top-div, #core-content {
+	animation: fadein 1s ease-in-out;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+.responsive-iframe-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 576px) {
+	body {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar .burger-menu {
+		display: block;
+	}
+
+	.nav-list li {
+		margin-right: 0px;
+		margin-top: 25px;
+		font-size: 1.2em;
+	}
+
+	.nav-list {
+		margin: 0;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: var(--tertiary-color);
+		backdrop-filter: blur(12px);
+		margin-left: 100%;
+		transition: all 0.5s ease;
+	}
+
+	.nav-list.mobile-menu {
+		margin-left: 0;
+	}
+
+	#home-title {
+		font-size: 3rem;
+	}
+
+	#headline {
+		font-size: 1rem;
+	}
+
+	#hero-section {
+		flex-direction: column;
+		text-align: center;
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+
+	#hero-name {
+		font-size: 3rem;
+		margin: 0 0 15px 0;
+	}
+
+	#hero-subtitle {
+		font-size: 1.2rem;
+	}
+
+	#hero-profile-pic {
+		width: 160px;
+		height: 160px;
+	}
+
+	.photo-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.stats-row {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+	.nav-list {
+		margin-left: 30%;
+	}
+}
