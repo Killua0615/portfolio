@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="js/main.js" defer></script>
 	</head>
-	<body>
+	<body class="lang-en">
 		<nav class="navbar">
 			<ul class="nav-list">
 				<li><a href="index.html" class="navbar-natsumi">Home</a></li>
@@ -21,68 +21,115 @@
 			<img class="burger-menu" src="images/burger_menu_icon.png" alt="burger menu">
 		</nav>
 		<div id="core-content">
+			<div class="lang-toggle">
+				<a id="lang-en" class="active" onclick="setLang('en')">EN</a> / <a id="lang-jp" onclick="setLang('jp')">JP</a>
+			</div>
 			<h1>Marketing & Branding</h1>
-			<p>Here is my <span class="marketing">marketing and branding</span> work!</p>
-			<p>Click on a project's name to get more details.</p>
+			<p>
+				<span class="lang-en">Here is my <span class="marketing">marketing and branding</span> work!</span>
+				<span class="lang-jp">私の<span class="marketing">マーケティング・ブランディング</span>の仕事です！</span>
+			</p>
+			<p>
+				<span class="lang-en">Click on a project's name to get more details.</span>
+				<span class="lang-jp">プロジェクト名をクリックすると詳細が表示されます。</span>
+			</p>
 
 			<!-- ========== Work ========== -->
 			<div>
-				<h2>Work</h2>
-				<p>Projects built for companies and clients.</p>
+				<h2>
+					<span class="lang-en">Work</span>
+					<span class="lang-jp">仕事</span>
+				</h2>
+				<p>
+					<span class="lang-en">Projects built for companies and clients.</span>
+					<span class="lang-jp">企業・クライアント向けのプロジェクト。</span>
+				</p>
 
 				<h3 id="ig-marketing" class="project-name">→ Instagram Marketing</h3>
 				<div id="ig-marketing-div" class="project-div">
-					<p><strong>Marketing Consultant</strong> — 2026 - Present</p>
-					<p>Contracted to manage Instagram marketing for a client. Handled content strategy, competitive analysis, performance tracking, and creating visual assets for the client's web presence.</p>
+					<p class="lang-en"><strong>Marketing Consultant</strong> — 2026 - Present</p>
+					<p class="lang-jp"><strong>マーケティングコンサルタント</strong> — 2026年 - 現在</p>
+					<p class="lang-en">Contracted to manage Instagram marketing for a client. Handled content strategy, competitive analysis, performance tracking, and creating visual assets for the client's web presence.</p>
+					<p class="lang-jp">クライアントのInstagramマーケティングを受託。コンテンツ戦略、競合分析、パフォーマンス追跡、Web向けビジュアルアセットの制作を担当。</p>
 				</div>
 
 				<h3 id="client-branding" class="project-name">→ Brand Identity Design</h3>
 				<div id="client-branding-div" class="project-div">
-					<p><strong>Brand Consultant</strong> — 2026 - Present</p>
-					<p>Defined the brand identity for a client from the ground up — established color codes, visual direction, target personas, and brand guidelines. Took the founder's abstract vision and translated it into a concrete, actionable brand system. Currently monitoring the client's creative output to ensure consistency with established brand guidelines.</p>
+					<p class="lang-en"><strong>Brand Consultant</strong> — 2026 - Present</p>
+					<p class="lang-jp"><strong>ブランドコンサルタント</strong> — 2026年 - 現在</p>
+					<p class="lang-en">Defined the brand identity for a client — established color codes, visual direction, target personas, and brand guidelines based on the existing logo and assets. Took the founder's abstract vision and translated it into a concrete, actionable brand system. Currently monitoring the client's creative output to ensure consistency with established brand guidelines.</p>
+					<p class="lang-jp">クライアントのブランドアイデンティティを定義。既存のロゴやアセットをベースに、カラーコード、ビジュアルの方向性、ターゲットペルソナ、ブランドガイドラインを策定。創業者の抽象的なビジョンを具体的で実行可能なブランドシステムに落とし込み。現在はブランドガイドラインとの一貫性を保つためクリエイティブ監修中。</p>
 				</div>
 
 				<h3 id="boku-watashi" class="project-name">→ Boku to Watashi and .inc</h3>
 				<div id="boku-watashi-div" class="project-div">
-					<p><strong>Assistant Director</strong> — Nov 2022 - Apr 2024</p>
-					<p>Gen-Z focused marketing and branding agency.</p>
-					<ul>
+					<p class="lang-en"><strong>Assistant Director</strong> — Nov 2022 - Apr 2024</p>
+					<p class="lang-jp"><strong>アシスタントディレクター</strong> — 2022年11月 - 2024年4月</p>
+					<p class="lang-en">Gen-Z focused marketing and branding agency.</p>
+					<p class="lang-jp">Z世代向けマーケティング・ブランディングエージェンシー。</p>
+					<ul class="lang-en">
 						<li>Assisted in establishing a Dutch subsidiary and overseas business development</li>
 						<li>English and Dutch translation for international operations</li>
 						<li>Market research and competitive analysis for overseas expansion</li>
+					</ul>
+					<ul class="lang-jp">
+						<li>オランダ子会社の設立支援、海外事業開発</li>
+						<li>国際事業向けの英語・オランダ語翻訳</li>
+						<li>海外展開のための市場調査・競合分析</li>
 					</ul>
 				</div>
 
 				<h3 id="skyland" class="project-name">→ Skyland Ventures Inc.</h3>
 				<div id="skyland-div" class="project-div">
-					<p><strong>Intern</strong> — Jun 2022 - Feb 2023</p>
-					<p>Seed-stage Venture Capital fund dealing with Crypto and Web 3.0</p>
-					<ul>
+					<p class="lang-en"><strong>Intern</strong> — Jun 2022 - Feb 2023</p>
+					<p class="lang-jp"><strong>インターン</strong> — 2022年6月 - 2023年2月</p>
+					<p class="lang-en">Seed-stage Venture Capital fund investing in Japanese startups.</p>
+					<p class="lang-jp">国内スタートアップに投資するシードステージのベンチャーキャピタルファンド。</p>
+					<ul class="lang-en">
 						<li>PR and communications: wrote weekly Web3 articles on Medium in English, managed PR TIMES releases</li>
 						<li>Participated in investor meetings for crypto and Web3 startups</li>
 						<li>Website translation and content updates (English)</li>
+					</ul>
+					<ul class="lang-jp">
+						<li>PR・広報：英語でWeb3記事をMediumに毎週執筆、PR TIMESのリリース管理</li>
+						<li>暗号資産・Web3スタートアップの投資家ミーティングに参加</li>
+						<li>Webサイトの英語翻訳・コンテンツ更新</li>
 					</ul>
 				</div>
 
 				<h3 id="codegym" class="project-name">→ CODEGYM Inc.</h3>
 				<div id="codegym-div" class="project-div">
-					<p><strong>Marketing Intern</strong> — Oct 2021 - Jun 2022</p>
-					<p>Programming education startup — selected as a Top 100 Japanese startup to watch (2021).</p>
-					<ul>
+					<p class="lang-en"><strong>Marketing Intern</strong> — Oct 2021 - Jun 2022</p>
+					<p class="lang-jp"><strong>マーケティングインターン</strong> — 2021年10月 - 2022年6月</p>
+					<p class="lang-en">Programming education startup — selected as a Top 100 Japanese startup to watch (2021).</p>
+					<p class="lang-jp">プログラミング教育スタートアップ — 2021年注目の日本のスタートアップTop 100に選出。</p>
+					<ul class="lang-en">
 						<li>Planned and managed social media channels for a programming education brand</li>
 						<li>Content creation, video production, and performance analysis</li>
 						<li>Joined upstream marketing strategy meetings</li>
+					</ul>
+					<ul class="lang-jp">
+						<li>プログラミング教育ブランドのSNSチャンネルの企画・運営</li>
+						<li>コンテンツ制作、動画制作、パフォーマンス分析</li>
+						<li>上流マーケティング戦略会議に参加</li>
 					</ul>
 				</div>
 
 				<h3 id="mulk" class="project-name">→ MULK FAMILY Inc.</h3>
 				<div id="mulk-div" class="project-div">
-					<p><strong>Short-term Intern</strong> — Oct - Nov 2021</p>
-					<p>Regional development / D2C on Awajishima island.</p>
-					<ul>
+					<p class="lang-en"><strong>Short-term Intern</strong> — Oct - Nov 2021</p>
+					<p class="lang-jp"><strong>短期インターン</strong> — 2021年10月 - 11月</p>
+					<p class="lang-en">Regional development / D2C on Awajishima island.</p>
+					<p class="lang-jp">淡路島での地域開発 / D2C事業。</p>
+					<ul class="lang-en">
 						<li>Lived on Awajishima for 1 month, working on local branding</li>
 						<li>Website creation, product photography, and D2C business planning</li>
 						<li>Social media branding for local specialty food products</li>
+					</ul>
+					<ul class="lang-jp">
+						<li>淡路島に1ヶ月滞在し、地域ブランディングに従事</li>
+						<li>Webサイト制作、商品撮影、D2C事業企画</li>
+						<li>地域特産品のSNSブランディング</li>
 					</ul>
 				</div>
 			</div>
@@ -91,13 +138,21 @@
 
 			<!-- ========== Personal Projects ========== -->
 			<div>
-				<h2>Personal Projects</h2>
-				<p>Things I built on my own.</p>
+				<h2>
+					<span class="lang-en">Personal Projects</span>
+					<span class="lang-jp">個人プロジェクト</span>
+				</h2>
+				<p>
+					<span class="lang-en">Things I built on my own.</span>
+					<span class="lang-jp">個人で立ち上げたもの。</span>
+				</p>
 
 				<h3 id="blank-brand" class="project-name">→ BLANK - CBD Incense & Candle Brand</h3>
 				<div id="blank-brand-div" class="project-div">
-					<p><strong>Founder</strong> — Jul 2021 - Aug 2022</p>
-					<p>A D2C wellness brand I founded at age 20. "BLANK" means creating a moment of pause — a blank space in your busy day. Every aspect was built from zero: product development, brand identity, packaging design, e-commerce, and marketing.</p>
+					<p class="lang-en"><strong>Founder</strong> — Jul 2021 - Aug 2022</p>
+					<p class="lang-jp"><strong>創業者</strong> — 2021年7月 - 2022年8月</p>
+					<p class="lang-en">A D2C wellness brand I founded at age 20. "BLANK" means creating a moment of pause — a blank space in your busy day. Every aspect was built from zero: product development, brand identity, packaging design, e-commerce, and marketing.</p>
+					<p class="lang-jp">20歳で立ち上げたD2Cウェルネスブランド。「BLANK」は忙しい日々の中に余白をつくるという意味。商品開発、ブランドアイデンティティ、パッケージデザイン、EC、マーケティングまで全てゼロから構築。</p>
 
 					<div class="stats-row">
 						<div class="stat-block">
@@ -114,35 +169,53 @@
 						</div>
 					</div>
 
-					<p><strong>Product Design:</strong> Developed CBD-infused incense and soy wax candles with wooden wicks. 4 months of R&D with professional fragrance blending.</p>
-					<p><strong>Brand Identity:</strong> Created the full brand system: name, logo, packaging, photography, and tone of voice. Designed for Instagram-native sharing.</p>
-					<p><strong>Crowdfunding:</strong> Launched on CAMPFIRE (Japan's leading platform). Managed copywriting, video production, reward fulfillment, and backer communication.</p>
-					<p><strong>E-commerce:</strong> Built and managed the Shopify store. Ran pop-up exhibitions and direct sales channels.</p>
+					<p class="lang-en"><strong>Product Design:</strong> Developed original incense and soy wax candles with wooden wicks. 4 months of R&D with professional fragrance blending.</p>
+					<p class="lang-jp"><strong>商品設計：</strong>オリジナルのお香とウッドウィックのソイワックスキャンドルを開発。プロの調香師と4ヶ月間のR&Dを実施。</p>
+					<p class="lang-en"><strong>Brand Identity:</strong> Created the full brand system: name, logo, packaging, photography, and tone of voice. Designed for Instagram-native sharing.</p>
+					<p class="lang-jp"><strong>ブランドアイデンティティ：</strong>ブランド名、ロゴ、パッケージ、写真、トーン&マナーまでブランドシステム全体を構築。Instagramネイティブなシェアを意識したデザイン。</p>
+					<p class="lang-en"><strong>Crowdfunding:</strong> Launched on CAMPFIRE (Japan's leading platform). Managed copywriting, video production, reward fulfillment, and backer communication.</p>
+					<p class="lang-jp"><strong>クラウドファンディング：</strong>CAMPFIRE（国内最大手）で実施。コピーライティング、動画制作、リターン発送、支援者対応を管理。</p>
+					<p class="lang-en"><strong>E-commerce:</strong> Built and managed the Shopify store. Ran pop-up exhibitions and direct sales channels.</p>
+					<p class="lang-jp"><strong>EC：</strong>Shopifyストアの構築・運営。ポップアップ出展や直販チャンネルも展開。</p>
 
 					<ul>
 						<li><i class="fas fa-globe"></i><a href="https://blank-onlineshop.myshopify.com/" target="_blank">online shop</a></li>
 						<li><i class="fas fa-globe"></i><a href="https://camp-fire.jp/projects/583845/view" target="_blank">crowdfunding page</a></li>
 					</ul>
 					<p></p>
-					<img class="project-screenshot" src="images/blank_products.jpg" alt="BLANK products and photography" style="border: none;">
+					<div class="image-slider">
+						<img src="images/blank_candles.jpg" alt="BLANK candles">
+						<img src="images/blank_incense.jpg" alt="BLANK incense">
+					</div>
 				</div>
 
 				<h3 id="bars" class="project-name">→ BARS Marketing</h3>
 				<div id="bars-div" class="project-div">
-					<p><strong>Founder</strong> — Oct 2021 - Present</p>
-					<p>Gen-Z focused marketing and branding business.</p>
-					<ul>
+					<p class="lang-en"><strong>Founder</strong> — Oct 2021 - Present</p>
+					<p class="lang-jp"><strong>創業者</strong> — 2021年10月 - 現在</p>
+					<p class="lang-en">Gen-Z focused marketing and branding business.</p>
+					<p class="lang-jp">Z世代向けのマーケティング・ブランディング事業。</p>
+					<ul class="lang-en">
 						<li>Social media branding and audience growth strategy</li>
 						<li>Content planning, creation, and competitive analysis</li>
 						<li>Account analytics and performance optimization</li>
 						<li>Organized events: 80-person celebration event in Tokyo (2022), 40-person networking event in Okinawa (2021)</li>
+					</ul>
+					<ul class="lang-jp">
+						<li>SNSブランディングとオーディエンス成長戦略</li>
+						<li>コンテンツ企画・制作・競合分析</li>
+						<li>アカウント分析とパフォーマンス最適化</li>
+						<li>イベント企画：東京で80人規模の祝賀イベント（2022年）、沖縄で40人規模のネットワーキングイベント（2021年）</li>
 					</ul>
 				</div>
 			</div>
 
 			<hr>
 
-			<h2>Skills & Tools</h2>
+			<h2>
+				<span class="lang-en">Skills & Tools</span>
+				<span class="lang-jp">スキル & ツール</span>
+			</h2>
 			<div class="skills">
 				<a href="https://www.adobe.com/products/photoshop.html" target="_blank" title="Adobe Photoshop" class="tech-link">
 					<img src="images/photoshop_icon.svg" alt="Photoshop icon" class="tech-icon">
@@ -154,7 +227,8 @@
 					<img src="images/premierepro_icon.svg" alt="Premiere Pro icon" class="tech-icon">
 				</a>
 			</div>
-			<p>SNS Marketing, Content Strategy, Data Analytics, Competitive Analysis, Brand Design, Photography, Video Production, Copywriting, Event Planning</p>
+			<p class="lang-en">SNS Marketing, Content Strategy, Data Analytics, Competitive Analysis, Brand Design, Photography, Video Production, Copywriting, Event Planning</p>
+			<p class="lang-jp">SNSマーケティング、コンテンツ戦略、データ分析、競合分析、ブランドデザイン、写真撮影、動画制作、コピーライティング、イベント企画</p>
 
 			<hr>
 		</div>
@@ -163,5 +237,17 @@
 			&copy; <span id="footer--year"></span> Natsumi Teshima
 		</footer>
 		<script src="js/watercolor.js"></script>
+		<script>
+			function setLang(lang) {
+				document.body.className = document.body.className.replace(/lang-\w+/, 'lang-' + lang);
+				document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+				document.getElementById('lang-jp').classList.toggle('active', lang === 'jp');
+				localStorage.setItem('lang', lang);
+			}
+			(function() {
+				var saved = localStorage.getItem('lang');
+				if (saved) setLang(saved);
+			})();
+		</script>
 	</body>
 </html>

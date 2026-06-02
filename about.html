@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="js/main.js" defer></script>
 	</head>
-	<body>
+	<body class="lang-en">
 		<nav class="navbar">
 			<ul class="nav-list">
 				<li><a href="index.html" class="navbar-natsumi">Home</a></li>
@@ -22,37 +22,67 @@
 			<img class="burger-menu" src="images/burger_menu_icon.png" alt="burger menu">
 		</nav>
 		<div id="core-content">
+			<div class="lang-toggle">
+				<a id="lang-en" class="active" onclick="setLang('en')">EN</a> / <a id="lang-jp" onclick="setLang('jp')">JP</a>
+			</div>
 			<div id="hero-section">
 				<div id="hero-text">
 					<h1 id="hero-name">Natsumi Teshima</h1>
-					<p id="hero-subtitle">Software Engineer & Marketer</p>
+					<p id="hero-subtitle">
+						<span class="lang-en">Software Engineer & Marketer</span>
+						<span class="lang-jp">ソフトウェアエンジニア & マーケター</span>
+					</p>
 				</div>
 				<div id="hero-image">
 					<img id="hero-profile-pic" src="images/avatar.png" alt="Natsumi Teshima">
 				</div>
 			</div>
-			<h2>About me</h2>
+
+			<h2>
+				<span class="lang-en">About me</span>
+				<span class="lang-jp">自己紹介</span>
+			</h2>
 			<div id="about-me">
-				<p>
+				<p class="lang-en">
 					I'm <strong><span class="natsumi">Natsumi Teshima</span></strong>. I'm a Japanese-Filipino <a href="engineering.html" class="engineering" style="text-decoration: underline;">Software Engineer</a> with a background in <a href="marketing.html" class="marketing" style="text-decoration: underline;">marketing and branding</a>.
 				</p>
+				<p class="lang-jp">
+					<strong><span class="natsumi">手島 なつみ</span></strong>です。日比ハーフの<a href="engineering.html" class="engineering" style="text-decoration: underline;">ソフトウェアエンジニア</a>で、<a href="marketing.html" class="marketing" style="text-decoration: underline;">マーケティング・ブランディング</a>のバックグラウンドがあります。
+				</p>
 
-				<p>
+				<p class="lang-en">
 					I studied <a href="engineering.html#school-projects" class="engineering" style="text-decoration: underline;">Computer Science</a> at <a href="https://42tokyo.jp/" target="_blank" style="text-decoration: underline;">42 Tokyo</a>, where I learned C, C++, web technologies, networking, and DevOps through peer-to-peer learning. I'm expected to graduate in 2026. I'm also pursuing a degree in Information Management (expected graduation: 2028).
 				</p>
+				<p class="lang-jp">
+					<a href="https://42tokyo.jp/" target="_blank" style="text-decoration: underline;">42 Tokyo</a>で<a href="engineering.html#school-projects" class="engineering" style="text-decoration: underline;">コンピュータサイエンス</a>を学び、C、C++、Web技術、ネットワーキング、DevOpsをピアラーニングで習得しました。2026年卒業予定。また、情報マネジメントの学位も取得中です（2028年卒業予定）。
+				</p>
 
-				<p>
+				<p class="lang-en">
 					Since 2024, I've been working as a freelance engineer and marketer.
 				</p>
+				<p class="lang-jp">
+					2024年から、フリーランスのエンジニア兼マーケターとして活動しています。
+				</p>
 
-				<p>
-					Before engineering, I was a <a href="marketing.html" class="marketing" style="text-decoration: underline;">marketer</a>. I founded a D2C wellness brand called BLANK, ran a crowdfunding campaign that achieved 169% of its goal, and interned in marketing at startups and a VC fund.				</p>
+				<p class="lang-en">
+					Before engineering, I was a <a href="marketing.html" class="marketing" style="text-decoration: underline;">marketer</a>. I founded a D2C wellness brand called BLANK, ran a crowdfunding campaign that achieved 169% of its goal, and interned in marketing at startups and a VC fund.
+				</p>
+				<p class="lang-jp">
+					エンジニアリングの前は<a href="marketing.html" class="marketing" style="text-decoration: underline;">マーケター</a>として活動していました。D2Cウェルネスブランド「BLANK」を立ち上げ、目標達成率169%のクラウドファンディングを実施。スタートアップやVCでマーケティングのインターンも経験しました。
+				</p>
 
-				<p>
+				<p class="lang-en">
 					I grew up between Tokyo and the Philippines, and lived in the Netherlands for two years. I'm a native Japanese speaker with working proficiency in English.
 				</p>
+				<p class="lang-jp">
+					東京とフィリピンで育ち、オランダに2年間住んでいました。日本語がネイティブで、英語はビジネスレベルです。
+				</p>
 			</div>
-			<h2>Technical skills</h2>
+
+			<h2>
+				<span class="lang-en">Technical skills</span>
+				<span class="lang-jp">技術スキル</span>
+			</h2>
 			<div class="skills">
 				<a href="https://en.cppreference.com/w/c" target="_blank" title="C" class="tech-link">
 					<img src="images/c_icon.png" alt="C icon" class="tech-icon">
@@ -100,7 +130,11 @@
 					<img src="images/github_icon.png" alt="GitHub icon" class="tech-icon">
 				</a>
 			</div>
-			<h2>Design tools</h2>
+
+			<h2>
+				<span class="lang-en">Design tools</span>
+				<span class="lang-jp">デザインツール</span>
+			</h2>
 			<div class="skills">
 				<a href="https://www.adobe.com/products/photoshop.html" target="_blank" title="Photoshop" class="tech-link">
 					<img src="images/photoshop_icon.svg" alt="Photoshop icon" class="tech-icon">
@@ -112,22 +146,72 @@
 					<img src="images/premierepro_icon.svg" alt="Premiere Pro icon" class="tech-icon">
 				</a>
 			</div>
-			<h2>Bio</h2>
+
+			<h2>
+				<span class="lang-en">Bio</span>
+				<span class="lang-jp">経歴</span>
+			</h2>
 			<ul id="bio">
-				<li><span class="year">2026</span><span>Graduated from <a href="https://42tokyo.jp/" target="_blank" style="text-decoration: underline;">42 Tokyo</a></span></li>
-				<li><span class="year">2025</span><span>NPC Worldwide fitness competition (Netherlands) — Novice A 1st place, Novice Overall 2nd place</span></li>
-				<li><span class="year">2025</span><span>SFF Chiba fitness competition — Top 6</span></li>
-				<li><span class="year">2024</span><span>Enrolled at 42 Tokyo — peer-to-peer software engineering program</span></li>
-				<li><span class="year">2023</span><span>Assistant Director at <a href="https://boku-to-watashi-and.com/" target="_blank" style="text-decoration: underline;">Boku to Watashi to Inc.</a></span></li>
-				<li><span class="year">2022</span><span>Moved to the Netherlands — interned at <a href="https://skyland.vc/" target="_blank" style="text-decoration: underline;">Skyland Ventures</a> (seed-stage VC)</span></li>
-				<li><span class="year">2022</span><span>Launched <a href="marketing.html" style="text-decoration: underline;">BLANK</a> crowdfunding campaign — 169% funded, 92 backers</span></li>
-				<li><span class="year">2021</span><span>Started own marketing business (BARS Marketing), founded D2C brand <a href="https://blank-onlineshop.myshopify.com/" target="_blank" style="text-decoration: underline;">BLANK</a></span></li>
-				<li><span class="year">2021</span><span>Marketing intern at <a href="https://codegym.jp/" target="_blank" style="text-decoration: underline;">CODEGYM</a> (programming education startup)</span></li>
-				<li style="margin-bottom: 0px;"><span class="year">2019</span><span>Graduated from Kyoei Gakuen Senior High School</span></li>
+				<li>
+					<span class="year">2026</span>
+					<span class="lang-en">Graduated from <a href="https://42tokyo.jp/" target="_blank" style="text-decoration: underline;">42 Tokyo</a></span>
+					<span class="lang-jp"><a href="https://42tokyo.jp/" target="_blank" style="text-decoration: underline;">42 Tokyo</a> 卒業</span>
+				</li>
+				<li>
+					<span class="year">2025</span>
+					<span class="lang-en">NPC Worldwide fitness competition (Netherlands) — Novice A 1st place, Novice Overall 2nd place</span>
+					<span class="lang-jp">NPC Worldwide フィットネス大会（オランダ）— Novice A 優勝、Novice Overall 準優勝</span>
+				</li>
+				<li>
+					<span class="year">2025</span>
+					<span class="lang-en">SFF Chiba fitness competition — Top 6</span>
+					<span class="lang-jp">SFF千葉 フィットネス大会 — Top 6</span>
+				</li>
+				<li>
+					<span class="year">2024</span>
+					<span class="lang-en">Enrolled at 42 Tokyo — peer-to-peer software engineering program</span>
+					<span class="lang-jp">42 Tokyo 入学 — ピアラーニング型ソフトウェアエンジニアリングプログラム</span>
+				</li>
+				<li>
+					<span class="year">2023</span>
+					<span class="lang-en">Assistant Director at <a href="https://boku-to-watashi-and.com/" target="_blank" style="text-decoration: underline;">Boku to Watashi to Inc.</a></span>
+					<span class="lang-jp"><a href="https://boku-to-watashi-and.com/" target="_blank" style="text-decoration: underline;">株式会社 僕と私と</a> アシスタントディレクター</span>
+				</li>
+				<li>
+					<span class="year">2022</span>
+					<span class="lang-en">Moved to the Netherlands — interned at <a href="https://skyland.vc/" target="_blank" style="text-decoration: underline;">Skyland Ventures</a> (seed-stage VC)</span>
+					<span class="lang-jp">オランダへ移住 — <a href="https://skyland.vc/" target="_blank" style="text-decoration: underline;">Skyland Ventures</a>（シードVC）でインターン</span>
+				</li>
+				<li>
+					<span class="year">2022</span>
+					<span class="lang-en">Launched <a href="marketing.html" style="text-decoration: underline;">BLANK</a> crowdfunding campaign — 169% funded, 92 backers</span>
+					<span class="lang-jp"><a href="marketing.html" style="text-decoration: underline;">BLANK</a> クラウドファンディング実施 — 達成率169%、支援者92名</span>
+				</li>
+				<li>
+					<span class="year">2021</span>
+					<span class="lang-en">Started own marketing business (BARS Marketing), founded D2C brand <a href="https://blank-onlineshop.myshopify.com/" target="_blank" style="text-decoration: underline;">BLANK</a></span>
+					<span class="lang-jp">マーケティング事業（BARS Marketing）を開始、D2Cブランド <a href="https://blank-onlineshop.myshopify.com/" target="_blank" style="text-decoration: underline;">BLANK</a> を設立</span>
+				</li>
+				<li>
+					<span class="year">2021</span>
+					<span class="lang-en">Marketing intern at <a href="https://codegym.jp/" target="_blank" style="text-decoration: underline;">CODEGYM</a> (programming education startup)</span>
+					<span class="lang-jp"><a href="https://codegym.jp/" target="_blank" style="text-decoration: underline;">CODEGYM</a>（プログラミング教育スタートアップ）でマーケティングインターン</span>
+				</li>
+				<li style="margin-bottom: 0px;">
+					<span class="year">2019</span>
+					<span class="lang-en">Graduated from Kyoei Gakuen Senior High School</span>
+					<span class="lang-jp">共栄学園高等学校 卒業</span>
+				</li>
 			</ul>
 
-			<h2>Photography</h2>
-			<p>Photography as a hobby since 2019.</p>
+			<h2>
+				<span class="lang-en">Photography</span>
+				<span class="lang-jp">写真</span>
+			</h2>
+			<p>
+				<span class="lang-en">Photography as a hobby since 2019.</span>
+				<span class="lang-jp">2019年から趣味で写真を撮っています。</span>
+			</p>
 			<div class="photo-grid">
 				<img src="images/photo1.jpg" alt="Portrait photography - soap bubbles">
 				<img src="images/photo2.jpg" alt="Portrait photography - spring flowers">
@@ -137,10 +221,19 @@
 				<img src="images/photo6.jpg" alt="Product photography - BLANK candles">
 			</div>
 
-			<h2>Interests 🧳</h2>
-			<p style="margin: 0px;">I love fitness, photography, minimalism, building things, travel, and learning new languages.</p>
+			<h2>
+				<span class="lang-en">Interests</span>
+				<span class="lang-jp">興味・関心</span>
+			</h2>
+			<p style="margin: 0px;">
+				<span class="lang-en">I love fitness, photography, minimalism, building things, travel, and learning new languages.</span>
+				<span class="lang-jp">フィットネス、写真、ミニマリズム、ものづくり、旅行、語学学習が好きです。</span>
+			</p>
 
-			<h2>Links</h2>
+			<h2>
+				<span class="lang-en">Links</span>
+				<span class="lang-jp">リンク</span>
+			</h2>
 			<div class="links">
 				<ul>
 					<li><i class="fab fa-github"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
@@ -155,5 +248,17 @@
 			&copy; <span id="footer--year"></span> Natsumi Teshima
 		</footer>
 		<script src="js/watercolor.js"></script>
+		<script>
+			function setLang(lang) {
+				document.body.className = document.body.className.replace(/lang-\w+/, 'lang-' + lang);
+				document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+				document.getElementById('lang-jp').classList.toggle('active', lang === 'jp');
+				localStorage.setItem('lang', lang);
+			}
+			(function() {
+				var saved = localStorage.getItem('lang');
+				if (saved) setLang(saved);
+			})();
+		</script>
 	</body>
 </html>

@@ -571,6 +571,60 @@ hr {
 }
 
 /* ============================================
+   IMAGE SLIDER
+   ============================================ */
+
+.image-slider {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	gap: 15px;
+	border-radius: 10px;
+	scrollbar-width: none;
+}
+
+.image-slider::-webkit-scrollbar {
+	display: none;
+}
+
+.image-slider img {
+	flex: 0 0 85%;
+	max-height: 300px;
+	border-radius: 10px;
+	object-fit: cover;
+	scroll-snap-align: start;
+}
+
+/* ============================================
+   LANGUAGE TOGGLE
+   ============================================ */
+
+body.lang-en .lang-jp { display: none; }
+body.lang-jp .lang-en { display: none; }
+
+.lang-toggle {
+	text-align: right;
+	margin-bottom: 10px;
+	font-size: 0.9rem;
+}
+
+.lang-toggle a {
+	cursor: pointer;
+	color: var(--secondary-color);
+	opacity: 0.5;
+	transition: 0.3s;
+}
+
+.lang-toggle a.active {
+	opacity: 1;
+	font-weight: 700;
+}
+
+.lang-toggle a:hover {
+	opacity: 1;
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 
