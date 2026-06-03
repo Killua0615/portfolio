@@ -333,6 +333,10 @@ hr {
 	border-radius: 10px;
 }
 
+.project-demo {
+	border-radius: 12px;
+}
+
 .project-div {
 	display: none;
 	animation: fadein 1s ease;
