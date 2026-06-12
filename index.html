@@ -6,37 +6,68 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
-	<body class="lang-en">
+	<body class="lang-en home-page">
 		<div id="top-div">
-			<div class="lang-toggle" style="position: absolute; top: 20px; right: 20px;">
-				<a id="lang-en" class="active" onclick="setLang('en')">EN</a> / <a id="lang-jp" onclick="setLang('jp')">JP</a>
-			</div>
-			<div id="top-text">
-				<h1 id="home-title">
-					<span class="lang-en">Hey, I'm <a href="about.html" title="about me"><span class="natsumi" id="natsumi-home-page">Natsumi</span></a>.</span>
-					<span class="lang-jp">こんにちは、<a href="about.html" title="about me"><span class="natsumi" id="natsumi-home-page-jp">なつみ</span></a>です。</span>
-				</h1>
-				<p id="headline">
-					<span class="lang-en">I'm a <a href="engineering.html" title="my engineering projects"><span class="engineering" id="engineering-link">Software Engineer</span></a> and a <a href="marketing.html" title="my marketing & branding work"><span class="marketing" id="marketing-link">Marketer</span></a> based in Tokyo.</span>
-					<span class="lang-jp">東京を拠点とする<a href="engineering.html" title="my engineering projects"><span class="engineering">ソフトウェアエンジニア</span></a>兼<a href="marketing.html" title="my marketing & branding work"><span class="marketing">マーケター</span></a>です。</span>
-				</p>
+			<div class="bento-grid">
+				<!-- Hero card: name + avatar -->
+				<a href="about.html" class="bento-card bento-hero">
+					<div class="bento-hero-content">
+						<p class="bento-hello">Hello, I'm</p>
+						<h1 class="bento-name"><span class="natsumi" id="natsumi-home-page">Natsumi<br>Teshima</span></h1>
+						<p class="bento-tagline">Software Engineer & Marketer<br>based in Tokyo</p>
+					</div>
+					<div class="bento-hero-image">
+						<img src="images/avatar.png" alt="Natsumi Teshima">
+					</div>
+				</a>
+
+				<!-- Engineering card -->
+				<a href="engineering.html" class="bento-card bento-engineering">
+					<div class="bento-card-icon"><i class="fas fa-terminal"></i></div>
+					<h2 class="bento-card-title">Engineering</h2>
+					<p class="bento-card-desc">C / C++ / TypeScript / Ruby on Rails / Docker</p>
+					<span class="bento-card-arrow"><i class="fas fa-arrow-right"></i></span>
+				</a>
+
+				<!-- Marketing card -->
+				<a href="marketing.html" class="bento-card bento-marketing">
+					<div class="bento-card-icon"><i class="fas fa-palette"></i></div>
+					<h2 class="bento-card-title">Marketing & Branding</h2>
+					<p class="bento-card-desc">D2C brand building, crowdfunding, content strategy</p>
+					<span class="bento-card-arrow"><i class="fas fa-arrow-right"></i></span>
+				</a>
+
+				<!-- Photo card -->
+				<div class="bento-card bento-photo">
+					<img src="images/photo1.jpg" alt="Photography">
+				</div>
+
+				<!-- Social card -->
+				<div class="bento-card bento-social">
+					<a href="https://github.com/" target="_blank" class="bento-social-link">
+						<i class="fab fa-github"></i>
+						<span>GitHub</span>
+					</a>
+					<a href="https://linkedin.com/" target="_blank" class="bento-social-link">
+						<i class="fab fa-linkedin"></i>
+						<span>LinkedIn</span>
+					</a>
+					<a href="mailto:natsu.bsk810@gmail.com" class="bento-social-link">
+						<i class="fas fa-envelope"></i>
+						<span>Email</span>
+					</a>
+				</div>
+
+				<!-- Location card -->
+				<div class="bento-card bento-location">
+					<span class="bento-location-pin"><i class="fas fa-map-marker-alt"></i></span>
+					<span class="bento-location-text">Tokyo, Japan</span>
+				</div>
 			</div>
 		</div>
 		<script src="js/watercolor.js"></script>
-		<script>
-			function setLang(lang) {
-				document.body.className = document.body.className.replace(/lang-\w+/, 'lang-' + lang);
-				document.getElementById('lang-en').classList.toggle('active', lang === 'en');
-				document.getElementById('lang-jp').classList.toggle('active', lang === 'jp');
-				localStorage.setItem('lang', lang);
-			}
-			(function() {
-				var saved = localStorage.getItem('lang');
-				if (saved) setLang(saved);
-			})();
-		</script>
 	</body>
 </html>
