@@ -6,21 +6,25 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<script src="js/main.js" defer></script>
 	</head>
 	<body class="lang-en">
-		<nav class="navbar">
-			<ul class="nav-list">
-				<li><a href="index.html" class="navbar-natsumi">Home</a></li>
-				<li><a href="engineering.html" class="engineering">Engineering</a></li>
-				<li><a href="marketing.html" class="navbar-marketing">Marketing & Branding</a></li>
-				<li><a href="about.html" class="navbar-natsumi">About</a></li>
-			</ul>
-			<img class="burger-menu" src="images/burger_menu_icon.png" alt="burger menu">
-		</nav>
+		<header class="site-header">
+			<nav class="nav" id="nav">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="engineering.html">Engineering</a>
+				<a href="marketing.html">Marketing</a>
+			</nav>
+			<div class="burger" id="burger" onclick="document.getElementById('nav').classList.toggle('open');this.classList.toggle('active')">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</header>
 		<div id="core-content">
 			<div class="lang-toggle">
 				<a id="lang-en" class="active" onclick="setLang('en')">EN</a> / <a id="lang-jp" onclick="setLang('jp')">JP</a>
@@ -252,6 +256,9 @@
 					<a href="https://www.docker.com/" target="_blank" title="Docker" class="tech-link">
 						<img src="images/docker_icon.webp" alt="Docker icon" class="tech-icon">
 					</a>
+					<a href="https://www.python.org/" target="_blank" title="Python" class="tech-link">
+						<img src="images/python_icon.png" alt="Python icon" class="tech-icon">
+					</a>
 					<a href="https://github.com/" target="_blank" title="GitHub" class="tech-link">
 						<img src="images/github_icon.png" alt="GitHub icon" class="tech-icon">
 					</a>
@@ -261,8 +268,9 @@
 			<hr>
 		</div>
 
-		<footer>
-			&copy; <span id="footer--year"></span> Natsumi Teshima
+		<footer class="site-footer">
+			<span>Portfolio</span>
+			<span>2026</span>
 		</footer>
 		<script src="js/watercolor.js"></script>
 		<script>
