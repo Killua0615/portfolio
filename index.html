@@ -6,7 +6,7 @@
     <title>Natsumi Teshima</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;800&family=M+PLUS+1+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <style>
         :root {
@@ -25,12 +25,13 @@
         body {
             margin: 0;
             min-height: 100%;
+            overflow-x: hidden;
         }
 
         body {
             background: var(--bg);
             color: var(--text);
-            font-family: "Source Code Pro", monospace;
+            font-family: "Source Code Pro", "M PLUS 1 Code", monospace;
         }
 
         a {
@@ -64,6 +65,8 @@
         footer {
             border-top: 1px solid var(--line);
             color: var(--muted);
+            position: relative;
+            z-index: 2;
         }
 
         .logo {
@@ -79,7 +82,8 @@
             transition: color 0.25s ease;
         }
 
-        .nav a:hover {
+        .nav a:hover,
+        .nav a.active {
             color: var(--accent);
         }
 
@@ -305,6 +309,22 @@
             }
         }
 
+        .houses {
+            position: fixed;
+            bottom: 72px;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
+            z-index: -1;
+            line-height: 0;
+        }
+
+        .houses img {
+            width: 100%;
+            display: block;
+            opacity: 0.4;
+        }
+
         @media (prefers-reduced-motion: reduce) {
             * {
                 transition: none !important;
@@ -316,7 +336,7 @@
     <div class="home">
         <header>
             <nav class="nav" id="nav">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
                 <a href="engineering.html">Engineering</a>
                 <a href="marketing.html">Marketing</a>
@@ -352,6 +372,9 @@
             <span>Portfolio</span>
             <span>2026</span>
         </footer>
+    </div>
+    <div class="houses">
+        <img src="images/amsterdam_houses.png" alt="Amsterdam canal houses">
     </div>
     <script src="js/watercolor.js"></script>
 </body>

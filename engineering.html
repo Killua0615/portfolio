@@ -6,7 +6,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;800&family=M+PLUS+1+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<script src="js/main.js" defer></script>
@@ -16,7 +16,7 @@
 			<nav class="nav" id="nav">
 				<a href="index.html">Home</a>
 				<a href="about.html">About</a>
-				<a href="engineering.html">Engineering</a>
+				<a href="engineering.html" class="active-engineering">Engineering</a>
 				<a href="marketing.html">Marketing</a>
 			</nav>
 			<div class="burger" id="burger" onclick="document.getElementById('nav').classList.toggle('open');this.classList.toggle('active')">
@@ -31,23 +31,23 @@
 			</div>
 			<h1>Engineering</h1>
 			<p>
-				<span class="lang-en">Here are my <span class="engineering">software engineering</span> projects!</span>
-				<span class="lang-jp">私の<span class="engineering">ソフトウェアエンジニアリング</span>プロジェクトです！</span>
+				<span class="lang-en">Here are my <span class="engineering">software engineering</span> projects.</span>
+				<span class="lang-jp">これまでに手がけた<span class="engineering">ソフトウェア開発</span>プロジェクトです。</span>
 			</p>
 			<p>
 				<span class="lang-en">Click on a project's name to get more details.</span>
-				<span class="lang-jp">プロジェクト名をクリックすると詳細が表示されます。</span>
+				<span class="lang-jp">プロジェクト名をクリックすると詳細をご覧いただけます。</span>
 			</p>
 
 			<!-- ========== Work ========== -->
 			<div>
 				<h2>
 					<span class="lang-en">Work</span>
-					<span class="lang-jp">仕事</span>
+					<span class="lang-jp">業務実績</span>
 				</h2>
 				<p>
 					<span class="lang-en">Projects built for companies and clients.</span>
-					<span class="lang-jp">企業・クライアント向けに開発したプロジェクト。</span>
+					<span class="lang-jp">クライアント企業向けに開発したプロジェクトです。</span>
 				</p>
 
 				<h3 id="king-queen" class="project-name">→ KING & QUEEN<img src="images/typescript_icon.png" class="project-tech-icon" title="TypeScript"><img src="images/react_icon.png" class="project-tech-icon" title="Next.js"><img src="images/hono_icon.png" class="project-tech-icon" title="Hono"><img src="images/postgresql_icon.svg" class="project-tech-icon" title="PostgreSQL"><img src="images/docker_icon.webp" class="project-tech-icon" title="Docker"></h3>
@@ -100,13 +100,13 @@
 				</h2>
 				<p>
 					<span class="lang-en">Things I built on my own.</span>
-					<span class="lang-jp">個人で開発したもの。</span>
+					<span class="lang-jp">個人で開発したプロジェクトです。</span>
 				</p>
 
 				<h3 id="bbb" class="project-name">→ BBB Web Studio<img src="images/typescript_icon.png" class="project-tech-icon" title="TypeScript"><img src="images/react_icon.png" class="project-tech-icon" title="Next.js"></h3>
 				<div id="bbb-div" class="project-div">
 					<p class="lang-en">A business automation tool that detects local businesses without websites via Google Maps API, generates sites using AI, and manages outreach — all from a single Notion-based dashboard.</p>
-					<p class="lang-jp">Google Maps APIでWebサイトを持たない地域ビジネスを検出し、AIでサイトを生成、営業管理まで一元化するビジネス自動化ツール。Notionベースのダッシュボードで管理。</p>
+					<p class="lang-jp">Google Maps APIでWebサイトを持たない地域ビジネスを抽出し、AIでサイトを自動生成。営業管理までを一元化する自動化ツールで、NotionベースのダッシュボードでDMや進捗を管理します。</p>
 				</div>
 
 				<h3 id="blank-shop" class="project-name">→ BLANK E-Commerce<img src="images/ruby_icon.svg" class="project-tech-icon" title="Ruby"><img src="images/rails_icon.svg" class="project-tech-icon" title="Ruby on Rails"><img src="images/postgresql_icon.svg" class="project-tech-icon" title="PostgreSQL"><img src="images/redis_icon.svg" class="project-tech-icon" title="Redis"><img src="images/tailwind_icon.svg" class="project-tech-icon" title="Tailwind CSS"><img src="images/stripe_icon.svg" class="project-tech-icon" title="Stripe"><img src="images/docker_icon.webp" class="project-tech-icon" title="Docker"><img src="images/rubocop_icon.svg" class="project-tech-icon" title="RuboCop"></h3>
@@ -125,11 +125,11 @@
 			<!-- ========== School Projects ========== -->
 			<div class="school-projects">
 				<h2 id="school-projects">
-					<span class="lang-en">School Projects</span>
-					<span class="lang-jp">学校プロジェクト</span>
+					<span class="lang-en">42 Tokyo Projects</span>
+					<span class="lang-jp">42 Tokyo プロジェクト</span>
 				</h2>
-				<p class="lang-en">Highlight projects from my studies at <span class="engineering"><a href="https://42tokyo.jp/" target="_blank" style="text-decoration: none; color: inherit">42 Tokyo</a></span>. 42 is a peer-to-peer engineering school with no teachers or classes. All projects are evaluated through rigorous peer review and automated testing.</p>
-				<p class="lang-jp"><span class="engineering"><a href="https://42tokyo.jp/" target="_blank" style="text-decoration: none; color: inherit">42 Tokyo</a></span>での主要プロジェクト。42は教師なし・授業なしのピアラーニング型エンジニアリングスクール。全プロジェクトは厳格な相互評価と自動テストで評価されます。</p>
+				<p class="lang-en">Highlight projects from my studies at <a href="https://42tokyo.jp/" target="_blank" class="engineering hover-link">42 Tokyo</a>. 42 is a peer-to-peer engineering school with no teachers or classes. All projects are evaluated through rigorous peer review and automated testing.</p>
+				<p class="lang-jp"><a href="https://42tokyo.jp/" target="_blank" class="engineering hover-link">42 Tokyo</a>での主要プロジェクトです。42は講師なし・授業なしのピアラーニング型エンジニアリングスクールで、全プロジェクトは厳格な相互レビューと自動テストによって審査されます。</p>
 
 				<h3 id="transcendence" class="project-name">→ ft_transcendence<img src="images/typescript_icon.png" class="project-tech-icon" title="TypeScript"><img src="images/react_icon.png" class="project-tech-icon" title="React / Next.js"><img src="images/nestjs_icon.png" class="project-tech-icon" title="NestJS"><img src="images/docker_icon.webp" class="project-tech-icon" title="Docker"></h3>
 				<div id="transcendence-div" class="project-div">
@@ -201,7 +201,7 @@
 				<h3 id="push-swap" class="project-name">→ push_swap<img src="images/c_icon.png" class="project-tech-icon" title="C"></h3>
 				<div id="push-swap-div" class="project-div">
 					<p class="lang-en">Sorting algorithm challenge. Sort a stack of integers using a limited set of operations in the fewest moves possible. Implemented with optimized chunk-based sorting strategy.</p>
-					<p class="lang-jp">ソートアルゴリズムの課題。限られた操作セットで整数のスタックを最小手数でソート。最適化されたチャンクベースのソート戦略で実装。</p>
+					<p class="lang-jp">ソートアルゴリズムの課題。限られた操作セットで整数のスタックを最小手数で並べ替える。最適化したチャンクベースの戦略で実装。</p>
 					<ul>
 						<li><i class="fab fa-github"></i><a href="https://github.com/Killua0615/push_swap" target="_blank">project page</a></li>
 					</ul>

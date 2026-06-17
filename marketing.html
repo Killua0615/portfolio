@@ -6,7 +6,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;800&family=M+PLUS+1+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<script src="js/main.js" defer></script>
@@ -17,7 +17,7 @@
 				<a href="index.html">Home</a>
 				<a href="about.html">About</a>
 				<a href="engineering.html">Engineering</a>
-				<a href="marketing.html">Marketing</a>
+				<a href="marketing.html" class="active-marketing">Marketing</a>
 			</nav>
 			<div class="burger" id="burger" onclick="document.getElementById('nav').classList.toggle('open');this.classList.toggle('active')">
 				<span></span>
@@ -32,7 +32,7 @@
 			<h1>Marketing & Branding</h1>
 			<p>
 				<span class="lang-en">Here is my <span class="marketing">marketing and branding</span> work!</span>
-				<span class="lang-jp">私の<span class="marketing">マーケティング・ブランディング</span>の仕事です！</span>
+				<span class="lang-jp">これまでに手がけた<span class="marketing">マーケティング・ブランディング</span>のプロジェクトです。</span>
 			</p>
 			<p>
 				<span class="lang-en">Click on a project's name to get more details.</span>
@@ -55,7 +55,7 @@
 					<p class="lang-en"><strong>Marketing Consultant</strong> — 2026 - Present</p>
 					<p class="lang-jp"><strong>マーケティングコンサルタント</strong> — 2026年 - 現在</p>
 					<p class="lang-en">Contracted to manage Instagram marketing for a client. Handled content strategy, competitive analysis, performance tracking, and creating visual assets for the client's web presence.</p>
-					<p class="lang-jp">クライアントのInstagramマーケティングを受託。コンテンツ戦略、競合分析、パフォーマンス追跡、Web向けビジュアルアセットの制作を担当。</p>
+					<p class="lang-jp">クライアントのInstagramマーケティングを受託。コンテンツ戦略、競合分析、効果測定、SNS向けビジュアルアセットの制作を担当。</p>
 				</div>
 
 				<h3 id="client-branding" class="project-name">→ Brand Identity Design</h3>
@@ -63,7 +63,7 @@
 					<p class="lang-en"><strong>Brand Consultant</strong> — 2026 - Present</p>
 					<p class="lang-jp"><strong>ブランドコンサルタント</strong> — 2026年 - 現在</p>
 					<p class="lang-en">Defined the brand identity for a client — established color codes, visual direction, target personas, and brand guidelines based on the existing logo and assets. Took the founder's abstract vision and translated it into a concrete, actionable brand system. Currently monitoring the client's creative output to ensure consistency with established brand guidelines.</p>
-					<p class="lang-jp">クライアントのブランドアイデンティティを定義。既存のロゴやアセットをベースに、カラーコード、ビジュアルの方向性、ターゲットペルソナ、ブランドガイドラインを策定。創業者の抽象的なビジョンを具体的で実行可能なブランドシステムに落とし込み。現在はブランドガイドラインとの一貫性を保つためクリエイティブ監修中。</p>
+					<p class="lang-jp">クライアントのブランドアイデンティティを定義。既存のロゴやアセットをベースに、カラーパレット、ビジュアルの方向性、ターゲットペルソナ、ブランドガイドラインを策定。創業者の抽象的なビジョンを具体的かつ実行可能なブランドシステムに落とし込み。現在はブランドガイドラインとの一貫性を保つためクリエイティブ監修中。</p>
 				</div>
 
 				<h3 id="boku-watashi" class="project-name">→ Boku to Watashi and .inc</h3>
@@ -78,9 +78,9 @@
 						<li>Market research and competitive analysis for overseas expansion</li>
 					</ul>
 					<ul class="lang-jp">
-						<li>オランダ子会社の設立支援、海外事業開発</li>
-						<li>国際事業向けの英語・オランダ語翻訳</li>
-						<li>海外展開のための市場調査・競合分析</li>
+						<li>オランダ子会社設立に関する調査・分析</li>
+						<li>海外事業向けの英語・オランダ語翻訳</li>
+						<li>海外展開に向けた市場調査・競合分析</li>
 					</ul>
 				</div>
 
@@ -107,7 +107,7 @@
 					<p class="lang-en"><strong>Marketing Intern</strong> — Oct 2021 - Jun 2022</p>
 					<p class="lang-jp"><strong>マーケティングインターン</strong> — 2021年10月 - 2022年6月</p>
 					<p class="lang-en">Programming education startup — selected as a Top 100 Japanese startup to watch (2021).</p>
-					<p class="lang-jp">プログラミング教育スタートアップ — 2021年注目の日本のスタートアップTop 100に選出。</p>
+					<p class="lang-jp">プログラミング教育スタートアップ — 東洋経済「すごいベンチャー100」選出。</p>
 					<ul class="lang-en">
 						<li>Planned and managed social media channels for a programming education brand</li>
 						<li>Content creation, video production, and performance analysis</li>
@@ -147,29 +147,25 @@
 					<span class="lang-en">Personal Projects</span>
 					<span class="lang-jp">個人プロジェクト</span>
 				</h2>
-				<p>
-					<span class="lang-en">Things I built on my own.</span>
-					<span class="lang-jp">個人で立ち上げたもの。</span>
-				</p>
 
-				<h3 id="blank-brand" class="project-name">→ BLANK - CBD Incense & Candle Brand</h3>
+				<h3 id="blank-brand" class="project-name">→ BLANK - Incense & Candle Brand</h3>
 				<div id="blank-brand-div" class="project-div">
 					<p class="lang-en"><strong>Founder</strong> — Jul 2021 - Aug 2022</p>
 					<p class="lang-jp"><strong>創業者</strong> — 2021年7月 - 2022年8月</p>
 					<p class="lang-en">A D2C wellness brand I founded at age 20. "BLANK" means creating a moment of pause — a blank space in your busy day. Every aspect was built from zero: product development, brand identity, packaging design, e-commerce, and marketing.</p>
 					<p class="lang-jp">20歳で立ち上げたD2Cウェルネスブランド。「BLANK」は忙しい日々の中に余白をつくるという意味。商品開発、ブランドアイデンティティ、パッケージデザイン、EC、マーケティングまで全てゼロから構築。</p>
 
-					<div class="stats-row">
+					<div class="stats-row" aria-label="Crowdfunding results">
 						<div class="stat-block">
-							<div class="stat-value">169%</div>
+							<div class="stat-value" data-target="169" data-suffix="%">0%</div>
 							<div class="stat-label">Funded</div>
 						</div>
 						<div class="stat-block">
-							<div class="stat-value">92</div>
+							<div class="stat-value" data-target="92" data-suffix="">0</div>
 							<div class="stat-label">Backers</div>
 						</div>
 						<div class="stat-block">
-							<div class="stat-value">¥508k</div>
+							<div class="stat-value" data-target="508" data-prefix="¥" data-suffix="k">¥0k</div>
 							<div class="stat-label">Raised</div>
 						</div>
 					</div>
@@ -188,7 +184,7 @@
 						<li><i class="fas fa-globe"></i><a href="https://camp-fire.jp/projects/583845/view" target="_blank">crowdfunding page</a></li>
 					</ul>
 					<p></p>
-					<div class="image-slider">
+					<div class="image-slider" onclick="var s=this;if(s.scrollLeft+s.offsetWidth>=s.scrollWidth-10){s.scrollTo({left:0,behavior:'smooth'})}else{s.scrollBy({left:s.offsetWidth*0.85,behavior:'smooth'})}">
 						<img src="images/blank_candles.jpg" alt="BLANK candles">
 						<img src="images/blank_incense.jpg" alt="BLANK incense">
 					</div>
@@ -210,7 +206,7 @@
 						<li>SNSブランディングとオーディエンス成長戦略</li>
 						<li>コンテンツ企画・制作・競合分析</li>
 						<li>アカウント分析とパフォーマンス最適化</li>
-						<li>イベント企画：東京で80人規模の祝賀イベント（2022年）、沖縄で40人規模のネットワーキングイベント（2021年）</li>
+						<li>イベント企画：東京で80人規模のイベント（2022年）<br>沖縄で40人規模のネットワーキングイベント（2021年）</li>
 					</ul>
 				</div>
 			</div>
@@ -253,6 +249,50 @@
 			(function() {
 				var saved = localStorage.getItem('lang');
 				if (saved) setLang(saved);
+			})();
+
+			// Count-up animation (respects prefers-reduced-motion)
+			(function() {
+				var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+				var row = document.querySelector('.stats-row');
+				if (!row) return;
+
+				var values = row.querySelectorAll('.stat-value[data-target]');
+
+				function countUp() {
+					values.forEach(function(el) {
+						var target = parseInt(el.getAttribute('data-target'));
+						var prefix = el.getAttribute('data-prefix') || '';
+						var suffix = el.getAttribute('data-suffix') || '';
+
+						if (prefersReduced) {
+							el.textContent = prefix + target + suffix;
+							return;
+						}
+
+						var duration = 1200;
+						var start = performance.now();
+						function step(now) {
+							var progress = Math.min((now - start) / duration, 1);
+							var eased = 1 - Math.pow(1 - progress, 3);
+							var current = Math.round(target * eased);
+							el.textContent = prefix + current + suffix;
+							if (progress < 1) requestAnimationFrame(step);
+						}
+						requestAnimationFrame(step);
+					});
+				}
+
+				var observer = new IntersectionObserver(function(entries) {
+					entries.forEach(function(entry) {
+						if (entry.isIntersecting) {
+							countUp();
+							observer.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.5 });
+
+				observer.observe(row);
 			})();
 		</script>
 	</body>
