@@ -44,6 +44,7 @@ if (document.querySelector('title').innerHTML === 'Natsumi Teshima - Engineering
 	new OpenableDiv("trading-cup");
 	new OpenableDiv("paymentmap");
 	new OpenableDiv("judge-sheet");
+	new OpenableDiv("gym-forms");
 	new OpenableDiv("ig-analytics");
 	new OpenableDiv("nsca-cpt");
 	new OpenableDiv("bbb");
