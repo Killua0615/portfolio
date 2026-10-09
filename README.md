@@ -22,7 +22,6 @@ Personal portfolio site for Natsumi Teshima — Software Engineer & Marketer bas
 - No build tools or dependencies
 
 ## Structure
-
 ```
 ├── index.html
 ├── about.html
